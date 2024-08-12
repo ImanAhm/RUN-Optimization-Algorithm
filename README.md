@@ -18,27 +18,27 @@ The RUN algorithm is a metaheuristic optimization algorithm inspired by the Rung
 - **pip install IM_RUN**
 
 ## Parameters
-
 Parameters
-nP: Number of particles in the swarm.
-MaxIt: Maximum number of iterations for the optimization loop.
-lb, ub: Lower and upper bounds for the solution space, which can be scalars (applied uniformly across all dimensions) or vectors (specific to each dimension).
-dim: Dimensionality of the optimization problem.
-fobj: Objective function to be minimized.
-constraint_handling: Method for constraint handling ("clip" for clipping, "RI" for random reinitialization).
-verbose: Boolean flag to enable or disable verbose output.
+- **nP:** Number of particles in the swarm.
+- **MaxIt:** Maximum number of iterations for the optimization loop.
+- **lb, ub:** Lower and upper bounds for the solution space, which can be scalars (applied uniformly across all dimensions) or vectors (specific to each dimension).
+- **dim:** Dimensionality of the optimization problem.
+- **fobj:** Objective function to be minimized.
+- **constraint_handling:** Method for constraint handling ("clip" for clipping, "RI" for random reinitialization).
+- **verbose:** Boolean flag to enable or disable verbose output.
+
 
 ## Constraint Handling Methods
 Clipping (Default): Keeps all values within the specified bounds using np.clip.
-Random Reinitialization (RI): If a particle exceeds the bounds, its position is reinitialized randomly within the permissible range.
 
+Random Reinitialization (RI): If a particle exceeds the bounds, its position is reinitialized randomly within the permissible range.
 
 ## Run RUN Algorithm
 
 To use the RUN algorithm, import the RUN function from the module and define your objective function. Set the parameters such as population size, maximum iterations, and bounds.
 
 import numpy as np  
-from run_algorithm import RUN, sphere_function  
+from IM_RUN import RUN 
 
 # Define objective function  
 def sphere_function(x):  
