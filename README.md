@@ -15,7 +15,7 @@ The RUN algorithm is a metaheuristic optimization algorithm inspired by the Rung
 
 ## Installation
 
-- **pip install IM_RUN**
+- **pip install IM_RUN_optimizer**
 
 ## Parameters
 Parameters
@@ -37,8 +37,9 @@ Parameters
 
 To use the RUN algorithm, import the RUN function from the module and define your objective function. Set the parameters such as population size, maximum iterations, and bounds.
 
-import numpy as np  
-from IM_RUN import RUN 
+import numpy as np 
+
+from IM_RUN_optimizer import RUN 
 
 # Define objective function  
 def sphere_function(x):  
