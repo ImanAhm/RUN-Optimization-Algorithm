@@ -29,9 +29,9 @@ Parameters
 
 
 ## Constraint Handling Methods
-Clipping (Default): Keeps all values within the specified bounds using np.clip.
+- **Clipping (Default):** Keeps all values within the specified bounds using np.clip.
 
-Random Reinitialization (RI): If a particle exceeds the bounds, its position is reinitialized randomly within the permissible range.
+- **Random Reinitialization (RI):** If a particle exceeds the bounds, its position is reinitialized randomly within the permissible range.
 
 ## Run RUN Algorithm
 
